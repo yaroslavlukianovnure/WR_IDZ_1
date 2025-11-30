@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDZ1_Lukianov_KIUKI-23-3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Шифр Цезаря</h1>
+        
+        <div class="input-group">
+            <label for="textInput">Введіть текст:</label>
+            <textarea id="textInput" placeholder="Текст для обробки..."></textarea>
+        </div>
+
+        <div class="input-group">
+            <label for="shiftInput">Ключ (зсув):</label>
+            <input type="number" id="shiftInput" value="3" min="1" max="25">
+        </div>
+
+        <div class="buttons">
+            <button id="encryptBtn">Зашифрувати</button>
+            <button id="decryptBtn" class="secondary">Розшифрувати</button>
+        </div>
+
+        <div class="result-group">
+            <label>Результат:</label>
+            <div id="outputResult" class="output-box"></div>
+        </div>
+    </div>
+</body>
+</html>
